@@ -25,8 +25,8 @@ public class KafkaController {
         return  ResponseEntity.ok("Message sent to kafka");
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<KafkaMessage> getById(@PathVariable Long id){
-        return ResponseEntity.ok(kafkaMessageService.getById(id).orElseThrow());
+    @GetMapping("/{code}")
+    public ResponseEntity<KafkaMessage> getById(@PathVariable String code){
+        return ResponseEntity.ok(kafkaMessageService.getByCode(code).orElseThrow());
     }
 }

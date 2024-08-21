@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class KafkaMessage {
 
-    private Long id;
+    private String code;
 
-    private String message;
+    private String label;
 }
