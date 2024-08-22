@@ -32,6 +32,7 @@ dependencies {
 	implementation("org.javalite:activejdbc:3.4-j11")
 	implementation("org.postgresql:postgresql:42.5.2")
 	implementation("org.liquibase:liquibase-core")
+	implementation("org.springframework.boot:spring-boot-starter")
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
